@@ -1,0 +1,469 @@
+{"intents": [
+  {"tag": "greeting",
+   "patterns": ["Hi", "Is anyone there?","Hey","Hola", "Hello", "Good day","Hi"],
+   "responses": ["Hi there! Welcome to CAPXP Analytics. How can I help? You can ask me any analytics related doubts or questions. For data related queries, Please contact our Data Science Team. <a href='#popup1'>Data Science Team</a>"],
+                
+   "context": [""]
+  },
+ 
+  {"tag": "Well_being",
+   "patterns": ["How are you?", "What's up?","All well?","what's going on?","all good?","sup"],
+   "responses": ["I'm good, feeling great after hearing from you,\nThank you.","I am good, Hope you're doing great.\nHow may I help?" ],
+   "context": [""]
+  },
+   
+  {"tag": "goodbye",
+   "patterns": ["Bye", "See you later", "Goodbye", "Nice talking to you, bye", "Until next time"],
+   "responses": ["See you! Wish you a good day ahead", "Bye! Have a nice day", "Bye! Come back soon again."],
+   "context": [""]
+  },
+  {"tag": "thanks",
+   "patterns": ["Thanks", "Thank you", "That's helpful", "Awesome, thanks", "Thanks for helping me", "thanku"], 
+   "responses": ["Happy to help!", "Any time!", "My pleasure"],
+   "context": [""]
+  },
+  {"tag": "noanswer",
+   "patterns": [" "],
+   "responses": ["Sorry, I couldn't understand you","Please give me more information","Mind asking the question again?"],
+   "context": [""]
+  },
+  {"tag": "options",
+   "patterns": ["How can you help me?", "What you can do?", "What help can you provide?", "How you can be helpful?", "What support is offered?", "how can you help me?","Can you please help me?","I've few doubts, can you clear it out?","what can you do?","Help"],
+   "responses": ["I can help you understand the any dashboard better. You can ask me any analytics related doubts. For any other Information, you can contact our data science Team. <a href='#popup1'>Data Science Team</a>"],
+   "context": [""]
+  },
+  {"tag": "Active",
+    "patterns": ["what do you mean by active users?","Explain term active", "who is a active user?","Active Users?"],
+   "responses": ["Active users are those users who have their overall practice count between 6 to 60."],
+   "context": [""]
+  },
+  {"tag": "passive",
+   "patterns":["what do you mean by passive users?","Explain term passive", "who is a passive user?","Passive Users?"],
+   "responses": ["Passive users are those users who have their overall practice count between 1 to 5"],                   
+   "context": [""]
+  },
+  {"tag": "Mindful_minutes",
+   "patterns": ["what do you mean by mindful minutes","Explain term Mindful minutes", "what are mindful minutes?","Mindful minutes?"],
+   "responses": ["Mindful minutes are the total minutes of time a user spends on practicing mindfulness"],     
+   "context": [""]
+  },
+  {"tag": "Dormant",
+   "patterns": ["what do you mean by dormant users?","Explain term dormant", "who is a dormant user?","dormant users?"],
+   "responses": ["Dormant users are those users who have never practiced so far. That is users with zero practice count"],
+   "context": [""]
+  },
+  {"tag": "Power",
+   "patterns": ["what do you mean by power users?","Explain term power", "who is a power user?","power Users?"],
+   "responses": ["Power users are those users having overall practice count more than 60."],
+   "context": [""]
+  },
+  {"tag": "onboarding",
+   "patterns": ["what do you mean by onboarding schools?","Explain term onboarding","onboarding schools?"],
+   "responses": ["Onboarding schools are those schools who have only one user registered."],
+   "context": [""]
+  },
+  {"tag": "Engaged",
+   "patterns": ["what do you mean by engaged schools?","Explain term engaged","engaged schools?"],
+   "responses": ["Engaged schools are those schools who have at least 70% of their users practicing."],
+   "context": [""]
+  },
+  
+  {"tag": "Intervention",
+   "patterns":  ["what do you mean by intervention schools?","Explain term intervention","intervention schools?"],
+   "responses": ["Intervention schools are those schools who have more than 1 users registered but have less than 70% of their users practising"],
+   "context": [""]
+  },
+{"tag": "Never_logged_in",
+   "patterns":  ["what do you mean by never logged in users?","Explain term never logged in","never logged in?"],
+   "responses": ["Users who have signed up (have credentials to access our program) but never logged in"],
+   "context": [""]
+  },
+{"tag": "Total_student",
+   "patterns":  ["what do you mean by Total students?","Explain term total student","total students?"],
+   "responses": ["Total number of Students impacted by the Inner Explorer program (assuming 28 students per classroom on average)"],
+   "context": [""]
+  },
+{"tag": "Trial ",
+   "patterns":  ["what do you mean by trial users?","Explain term trial users","trial users?"],
+   "responses": ["Trial Users are those users who have full access to the program for free, but for a limited period of time"],
+   "context": [""]
+  },
+{"tag": "SY",
+   "patterns":  ["CSY","LSY","SY", "What is LSY"],
+   "responses": ["CSY: Current School Year(2020-2021), LSY: Last School year(2019-2020)"],
+   "context": [""]
+  },
+{"tag": "average_rating",
+   "patterns":  ["What is average rating","average rating"],
+   "responses": ["Average of the overall star rating given by users."],
+   "context": [""]
+  },
+
+{"tag": "Total_revenue",
+   "patterns":  ["Revenue pie chart","Total revenue pie chart","Total revenue pie chart"],
+   "responses": ["Total revenue chart shows the total revenue generated (CSY) through cheques (green), wire transfer (orange), pay later (yellow), square payment(blue) and other modes(dark green)"],
+   "context": [""]
+  },
+{"tag": "practice_count",
+   "patterns":  ["define practice count?","explain term practice count?","what is practice count?"],
+   "responses": ["Practice Count refers to the total number of times play button is pressed"],
+   "context": [""]
+  },
+{"tag": "renewal_date",
+   "patterns":  ["define renewal date","renewal date","what is renewal date?"],
+   "responses": ["Renewal date is the subscription expiry date that is when the subscription of a user expires and the user no longer has full access to the program beyond that date."],
+   "context": [""]
+  },
+{"tag": "last_practice_date",
+   "patterns":  ["define last practice date","last practice date","what is last practice date?"],
+   "responses": ["Latest date when the user practiced mindfulness through our program."],
+   "context": [""]
+  },
+{"tag": "practice_history",
+   "patterns": ["what does the practice history graph represent?"," school Practice history trend?","practice history","what insights can we get from the practise history chart","Insights of Practice History"],
+   "responses": ["Practice history graph shows the day wise practice count trend for all the users in the last school year(LSY) and current school year(CSY). 1) Orange line: LSY practice trend, 2) Green Bars: CSY practice counts, 3) Light Green Bars: Family App (Inner Explorer @HOME) practice counts. Due to lockdown (from march'20 onwards) there is downfall  in practice in CSY than LSY which is raised by practicing through Inner Explorer @HOME app. There is a fall in overall practice trend in Dec-Jan & June-July due to vacation. For graph click here:-<a href='https://cap4ganalytics.innerexplorer.org/Executive_Dashboard'>practice history</a>"],
+   "context": [""]
+  },
+
+{"tag": "state_school_analytics",
+   "patterns": ["state wise school search","search the school for california", "search the school of USA"],
+   "responses": ["For state wise school search,Please follow the link:-<a href='https://cap4ganalytics.innerexplorer.org/School_Analytics'>school analytics</a>"],
+   "context": [""]
+  },
+{"tag": "School_search",
+   "patterns": ["school search","please search the school for me","give me the detail of school"],
+   "responses": ["1. For state wise school search, click here:-<a href='https://cap4ganalytics.innerexplorer.org/School_Analytics'>school analytics</a>, 2.Serach school by name/email, click here:-<a href='https://cap4ganalytics.innerexplorer.org/School_Search'>school search</a>"],
+   "context": [""]
+  },
+
+{"tag": "district_level_view",
+   "patterns": ["detail of district","how many schools are there in the district","show me district analytics","rusd","hillsborough","englewood","lausd","fairfield","youngstown","broward","sarasota","skillman"],
+   "responses": ["For district school search,Here is the link:-<a href='https://cap4ganalytics.innerexplorer.org/District_level_view_RUSD'>district level view</a> "],
+   "context": [""]
+  },
+
+{"tag": "practice_trend",
+   "patterns": ["practice trend","Explain practice trend", "Insights of practice trend"],
+   "responses": ["Practice trend shows the month wise users practice count for last school year(2018-2019), current school year(2019-2020) & family app. There is sharp  decrease in practice count of schools in dec and Jun-Jul due to vacations."],
+   "context": [""]
+  },
+{"tag": "active_user_trend",
+   "patterns": ["active user trend","Explain active user trend", "Insights of active user trend"],
+   "responses": ["Active Practice graph shows the month wise active users count for last school year(2018-2019), current school year(2019-2020) & family app."],
+   "context": [""]
+  },
+{"tag": "program_wise_practice_trend",
+   "patterns": ["program wise practice trend","Explain program wise practice trend", "Insights of program wise practice trend"],
+   "responses": ["Program-wise Practice graph shows monthly(CSY) practice count for each program i.e. Pre-K, Elementary, Middle, High, Sound/Transition are denoted by different colors with names."],
+   "context": [""]
+  },
+{"tag": "program_wise__active_user_trend",
+   "patterns": ["program wise active users trend","Explain program wise active users trend", "Insights of program wise active users trend"],
+   "responses": ["Program wise active user trend shows monthly(CSY) active user count for each program i.e. Pre-K, Elementary, Middle, High, Sound/Transition are denoted by different colors with names."],
+   "context": [""]
+  },
+{"tag": "average_practice_trend",
+   "patterns": [" average practice trend","Explain average practice trend", "Insights of average practice trend"],
+   "responses": ["Average practice trend shows the monthly average practice count of the Last SY 2018-2019(orange) and Current SY 2019-   2020(dark green)."],
+   "context": [""]
+  },
+{"tag": "day_wise_practice_count",
+   "patterns": [" day wise practice count","Explain day wise practice count", "Insights of day wise practice count"],
+   "responses": ["This graph  shows the day wise total practice count of the Last SY 2018-2019(orange) and Current SY 2019-2020(dark green).There is sharp decrease  in practice on sunday & saturday due to holiday."],
+   "context": [""]
+  },
+{"tag": "day_wise_active_user_count",
+   "patterns": [" day wise active user count","Explain day wise active user count", "Insights of day wise active count"],
+   "responses": ["This graph  shows the day wise total active user count of the Last SY 2018-2019(orange) and Current SY 2019-2020(dark green).There is sharp decrease in practice on sunday & saturday due to holiday."],
+   "context": [""]
+  },
+{"tag": "next_6months",
+   "patterns": [" school up for renewal next 6 months","Explain day school up for renewal next 6 months", "Insights of school up for renewal next 6 months"],
+   "responses": ["This graph shows the schools whose subscription will be expired in the next 6 months which is categorized into 3 i.e. Expiring(dark green) or Expiring soon but active(green) and Expiring soon but active in 2020(parrot green). By clicking on bar, you can get more details of these schools"],
+   "context": [""]
+  },
+{"tag": "school_expired_CSY",
+   "patterns": [" school expired in current SY","Explain day school expired in CSY", "Insights of school expired in CSY"],
+   "responses": ["This graph shows schools whose subscription has either expired (dark green) or expired but active (green) and expired but 50% users still active(parrot green) in CSY."],
+   "context": [""]
+  },
+{"tag": "Cloud_users",
+   "patterns": [" cloud users","Explain cloud users graph", "Insights of cloud users graph"],
+   "responses": [" "],
+   "context": [""]
+  },
+{"tag": "trial_users",
+   "patterns": [" trial users","Explain trial users graph", "Insights of trial users graph"],
+   "responses": [" "],
+   "context": [""]
+  },
+{"tag": "webapp_payment",
+   "patterns": ["web app payment history","Explain web app payment history", "Insights of web app payment history"],
+   "responses": ["Web App payment history shows the total payment made through web apps on a daily basis since 2016. Orange line represents the cumulative amount(USD) and green bar shows the total amount of particular day."],
+   "context": [""]
+  },
+{"tag": "mobileapp_payment",
+   "patterns": ["mobile app payment history","Explain mobile app payment history", "Insights of mobile app payment history"],
+   "responses": ["Mobile App payment history shows the total payment made through mobile app on a daily basis since sep'17. Orange line represents the cumulative amount(USD) and green bar shows the total amount of particular day."],
+   "context": [""]
+  },
+{"tag": "Feedback_rating",
+   "patterns": ["Feedback rating","Explain feedback rating graph", "Insights of feedback rating graph"],
+   "responses": ["This graph shows the feedback rating count we received in a star based rating system which can also be seen in terms of month wise if clicked upon."],
+   "context": [""]
+  },
+{"tag": "sentiment_analysis",
+   "patterns": ["sentiment analysis","Explain sentiment analysis graph", "Insights of sentiment analysis"],
+   "responses": ["This graph shows percentage of positive(green) and negative(red) sentiments for each star rating."],
+   "context": [""]
+  },
+{"tag": "user_feedback",
+   "patterns": ["user feedback trend YOY","Explain user feedback trend YOY graph", "Insights of user feedback trend YOY"],
+   "responses": ["It represents the month-wise comparison of  total users given feedback in Last SY and Current SY."],
+   "context": [""]
+  },
+
+{"tag": "world_cloud",
+   "patterns": ["world cloud","Explain world cloud", "what does world cloud represent"],
+   "responses": ["World cloud shows the positive and negative comments posted by users"],
+   "context": [""]
+  },
+{"tag": "feature_release",
+   "patterns": ["Feature release","Explain feature release", "what does feature release represent"],
+   "responses": ["Feature release shows the day wise count of aws( amazon web services ) release from 2019-2020 ."],
+   "context": [""]
+  },
+{"tag": "schoology_signup",
+   "patterns": ["schoology signup history","Explain schoology signup history", "insights of schoology signup history"],
+   "responses": ["Schoology signup history graph shows the per day signup count for Current SY. Orange line represent cumulative count of  signup and green bar shows the total sign up of each day."],
+   "context": [""]
+  },
+
+{"tag": "schoology_practice",
+   "patterns": ["schoology practice history","Explain schoology practice history", "Insights of schoology practice history"],
+   "responses": ["Schoology practice history shows the per day practice count for Current SY. Orange line represent cumulative count of  practice done and green bar shows the total practice of each day."],
+   "context": [""]
+  },
+
+{"tag": "maximum_program",
+   "patterns": ["which program is being practiced the most","the most practiced program","program is used by maximum users"],
+   "responses": ["Elementary. For more detail, click here:-<a href='https://cap4ganalytics.innerexplorer.org/Practice_Analytics'>practice analytics</a>"],
+   
+   "context": [""]
+  },
+
+
+{"tag": "transaction_report",
+   "patterns": ["transaction_report", "payment detail", "revenue analytics"],
+   "responses": ["For revenue info,Here is the link:-<a href='https://cap4ganalytics.innerexplorer.org/Transaction_Reporting'>transaction report</a>"],
+   "context": [""]
+  },
+
+{"tag": "bill_me_later",
+   "patterns": ["bill me later","total amount","bill me later amount"],
+       "responses":["Day wise amount using Bill Me Later. Here is the link:-<a href='https://cap4ganalytics.innerexplorer.org/Bill_later'>bill later</a>"],
+   "context": [""]
+  },
+
+{"tag": "SCHOOLOGY_ANALYTICS",
+   "patterns": ["SCHOOLOGY ANALYTICS","schoology"],
+   "responses": ["SCHOOLOGY ANALYTICS. Link:- <a href='https://cap4ganalytics.innerexplorer.org/Scoology'>Schoology analytics</a>"],
+   "context": [""]
+  },
+{"tag": "AWS_analytics",
+   "patterns": ["AWS analytics","AWS cost","AWS cost per playback","aws cost per user growth","aws cost vs user growth","aws cost vs playback","aws"],
+   "responses": ["For AWS analytics, please refer the link:-<a href='https://cap4ganalytics.innerexplorer.org/aws'>AWS analytics</a>"],
+   "context": [""]
+  },
+
+{"tag": "AWS_release",
+   "patterns": ["AWS release"],
+   "responses": ["Date wise aws feature release.Here is the link:-<a href='https://cap4ganalytics.innerexplorer.org/aws_releases'>AWS release</a>"],
+   "context": [""]
+  },
+   
+    {"tag": "AWS_user_growth",
+   "patterns": ["AWS Cost vs User growth", "explain AWS Cost vs User growth"],
+   "responses": ["AWS cost vs user growth shows cumulative school and family users in a stacked column. With actual cost  curve on the y axis"],
+   "context": [""]
+  },
+      {"tag": "AWS_playbacks",
+   "patterns": ["AWS Cost vs playbacks", "explain AWS Cost vs playbacks"],
+   "responses": ["AWS cost vs playbacks showing school and family users practice in a stacked column. With cost per playback(cents) on y axis"],
+   "context": [""]
+  },
+
+
+{"tag": "Feedback_analytics",
+   "patterns": ["what is average rating of feedback?","show me feedback analytics","feedback analytics","what does feedback graph represent?","insights of feedback"],
+   "responses": ["The average rating of feedback is 4.5. The maximum rating given by users is 5 stars. For more detail, click here:-<a href='https://cap4ganalytics.innerexplorer.org/feedback_Analyitcs'>feedback analytics</a>"],
+   "context": [""]
+  },  
+
+
+{"tag": "family_signup",
+   "patterns": ["family app signup","Explain family app signup graph", "Insights of family app signup graph"],
+   "responses": ["Family app signup trend shows the per day  total signups(parents count) for family app from 17-03-2020 onwards. Orange line represent cumulative count of signup and green bar shows the total sign up of each day."],
+   "context": [""]
+  },
+{"tag": "family_signup_comparison",
+   "patterns": ["Family hourly signup comparison","Explain Family hourly signup comparison", "Insights of Family hourly signup comparison graph"],
+   "responses": ["This graph shows the hourly comparison of total signup of family app on the present day(dark green) and the day before that(orange)."],
+   "context": [""]
+  },
+{"tag": "daywise_fsignup",
+   "patterns": ["day wise family signup","Explain day wise family signup", "Insights of day wise family signup graph"],
+   "responses": ["This graph shows the day-wise total signups count of family app."],
+   "context": [""]
+  },
+{"tag": "family_signup_hourly",
+   "patterns": ["Family hourly signup","Explain Family hourly signup graph", "Insights of Family hourly signup graph"],
+   "responses": ["This graph shows the count of signups on  family app on an hourly basis."],
+   "context": [""]
+  },
+
+{"tag": "family_analytics",
+   "patterns": ["Family analytics","show me detail family analytics","show me app details"],
+   "responses": ["For family app analytics, here is the link:-<a href='https://cap4ganalytics.innerexplorer.org/Parents_Analytics'>Family signups</a>"],
+   "context": [""]
+  },
+
+{"tag": "district_fsignup",
+   "patterns": ["family sign up trend by district","Explain family sign up trend by district ", "Insights of family sign up trend by district"],
+   "responses": ["This graph shows the district wise total signup count on the family app."],
+   "context": [""]
+  },
+
+{"tag": "school_wise_fsignup",
+   "patterns": ["Family app signup by school","Explain Family app signup by school ", "Insights of Family app signup by school"],
+   "responses": ["This graph shows the parents signup count on the family app for each school."],
+   "context": [""]
+  },
+
+{"tag": "Family_app_district",
+   "patterns": ["parents detail for the district","search parent by school district","parent's detail","parent information"],
+   "responses":["Here is the link:-<a href='https://cap4ganalytics.innerexplorer.org/District_level_Parent_view'>family app district</a>"],
+   "context": [""]
+  },  
+ {"tag": "Family_app_school",
+   "patterns": ["which district has the maximum app signups","maximum app signup district"],
+   "responses": ["Sarasota has the maximum family app signups till now. Please refer the link:-<a href='https://cap4ganalytics.innerexplorer.org/Familyapp_school'>family app school</a>"],
+   "context": [""]
+}, 
+{"tag": "family_school_search",
+   "patterns": ["school search for family app","school of I am present app","search school of family app","schools for app","family app school detail"],
+   "responses": ["For family app school search,please refer the link:-<a href='https://cap4ganalytics.innerexplorer.org/Family_School_Search'>family school search</a>"],
+   "context": [""]
+  },
+{"tag": "fapp_practice",
+   "patterns": ["Family app practice","Explain Family app practice graph", "Insights of Family app practice"],
+   "responses": ["This graph shows the per day  practice count for family app. Orange line represent cumulative count of practice and green bar shows the total practice on each day."],
+   "context": [""]
+  },
+
+{"tag": "day_wise_fpractice",
+   "patterns": ["day wise family practice","Explain day wise family practice", "Insights of day wise family practice"],
+   "responses": ["day wise family practice graph shows the day wise total family app practice count."],
+   "context": [""]
+  },
+{"tag": "day_wise_uniquefcount",
+   "patterns": ["day wise unique family practiced","Explain day wise unique family practiced", "Insights of day wise unique family practiced"],
+   "responses": ["This graph shows the day wise count of active family( users have practiced at least 50% of track)."],
+   "context": [""]
+  },
+{"tag": "Fpractice_hourly",
+   "patterns": ["family hourly practice","Explain day family hourly practice graph", "Insights of family hourly practice"],
+   "responses": ["This graph shows the total family app practice count hourly."],
+   "context": [""]
+  },
+
+{"tag": "Fpractice_hourly_comparison",
+   "patterns": ["family hourly practice comparison","Explain day family hourly practice comparison", "Insights of family hourly practice comparison"],
+   "responses": ["This graph shows the total family app practice count hourly on the present day(dark green) and on the day before(yesterday)."],
+   "context": [""]
+  },
+
+
+{"tag": "fprogram_analytics",
+   "patterns": ["program wise family analytics","family analytics program wise"],
+   "responses": ["For program analytics, here is the link:-<a href='https://cap4ganalytics.innerexplorer.org/Progarm_wise_Analytics'>family program analytics</a>"],
+   "context": [""]
+  },
+{"tag": "Family_feedback",
+   "patterns": ["Family feedback rating","Explain  Family feedback rating graph", "Insights of Family feedback rating"],
+   "responses": ["This graph shows the feedback we get for family app on a star rating system which can be seen month wise format when clicked upon."],
+   "context": [""]
+  },
+{"tag": "Family_feedback",
+   "patterns": ["family sentiment analysis","Explain family sentiment analysis graph", "Insights of family sentiment analysis"],
+   "responses": ["This graph shows the percentage of sentiment feedbacks we got towards our family app as positive(dark green), neutral(parrot green) or negative(orange)."],
+   "context": [""]
+  },
+
+{"tag": "sms_report",
+   "patterns": ["SMS  successful report","Explain SMS  successful report", "Insights of SMS  successful report"],
+   "responses": ["SMS  successful report shows the total sms messages sent per day which has been bifurcated into successfully sent messages(green) and unsuccessful messages(orange)."],
+   "context": [""]
+  },
+
+{"tag": "android_install",
+   "patterns": ["android app install","Explain android app install", "Insights of android app install"],
+   "responses": ["This graph shows the per day total app downloads by android. Orange line represent cumulative count of downloads and green bar shows the  per day download."],
+   "context": [""]
+  },
+
+{"tag": "IOS_downlaods",
+   "patterns": ["IOS downloads","Explain downloads", "Insights of IOS downloads"],
+   "responses": ["This graph shows the per day count of  IOS app installed by users. Orange line represent cumulative count of downloads and green bar shows the  per day download."],
+   "context": [""]
+  },
+
+
+{"tag": "IOS_analytics",
+       "patterns": ["IOS analytics","IOS downloads","IOS page view","IOS impressions","show the ios analytics","how many app downloads by IOS"],
+   "responses": ["For IOS analytics, click here:-<a href='https://cap4ganalytics.innerexplorer.org/IOS_Analytics'>IOS analytics</a>"],
+   "context": [""]
+  },
+
+
+ {"tag": "Android_analytics",
+   "patterns": ["show android analytics","how many app has installed by androids","sessions","android downloads"],
+   "responses": ["For android analytics, here is the link:-<a href='https://cap4ganalytics.innerexplorer.org/Android_analytics'>android analytics</a>"],
+   "context": [""]
+  },
+ {"tag": "SMS_analytics",
+   "patterns": ["sms analytics","total sms sent","sms","sms unsuccessful","sms delivery","parent detail of sms"],
+   "responses": ["For sms analytics, here is the link:-<a href='https://cap4ganalytics.innerexplorer.org/Sms_analytics'>SMS analytics</a>"],
+   "context": [""]
+   
+  },
+ {"tag": "Family app geo",
+   "patterns": ["Total families","family count by countries","parent counts in usa","parent count in state","app count in state","app map view","state wise family app search"],
+   "responses": ["For family app geo, here is the link:-<a href='https://cap4ganalytics.innerexplorer.org/Parents_map_view'>family app geo</a>"],
+   "context": [""]
+  },
+ {"tag": "Family_survey",
+   "patterns": ["Family survey","Family survey analytics","survey responses","daily survey","survey progress","survey questions", "questions attempted" ],
+   "responses": ["For family survey analytics, here is the link:-<a href='https://cap4ganalytics.innerexplorer.org/Family_SURVEY'>family survey</a>"],
+   "context": [""]
+  },
+
+{"tag": "query",
+   "patterns": ["I have insights related query", "data analytics doubts","dashboard query" ,"1"],
+   "responses": ["Please ask me the question"],
+   "context": [""]
+  }
+
+
+
+]
+}
+
+
+
+
+
+
+
+
+

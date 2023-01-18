@@ -1,0 +1,783 @@
+{
+    "intents": [
+        {
+            "tag": "Language",
+            "patterns": [
+                "how many languages do you know?",
+                "which language do you know?",
+                "Language",
+                "how many languages do you understand?",
+                "which language do you understand?",
+                "What languages are available ?" 
+            ],
+            "responses": [
+                "I understand English language😊"
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "Name",
+            "patterns": [
+                "What is your name?",
+                "Name",
+                "what's your good name?",
+                "wat is ur name?",
+                "Who are you?"
+            ],
+            "responses": [
+                "I'm Genie. How may I help you?😊"
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "greeting",
+            "patterns": [
+                "Hi",
+                "Is anyone there?",
+                "Hey",
+                "Hola",
+                "Hello",
+                "Good day",
+                "hi"
+            ],
+            "responses": [
+                "I'm Genie, IE's virtual assistant. How may I help you?😊",
+                "Hello guest!\nWelcome to Inner Explorer😊.\nHow can I help?",
+                "Hello, I'm Genie. I spend all my days assisting people who want to talk to Inner Explorer! What can I do for you?😊",
+                "Hello there! Genie at your service. How can I help?😊 "
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "Well_being",
+            "patterns": [
+                "How are you?",
+                "What's up?",
+                "All well?"
+            ],
+            "responses": [
+                "I'm happy after hearing from you,\nThanks.😀",
+                "Good! Hope you're doing great.\nHow may I help?😀",
+                "Wonderfully happy😁. Thanks for asking! Can I help you?",
+                "Thanks for asking. I'm quite all right.😀"
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "Login_issue",
+            "patterns": [
+                "I'm unable to login? please help me.",
+                "Getting error in login",
+                "facing issue in login",
+                "I can't login to my account."
+            ],
+            "responses": [
+                "Please provide your Email address. Our team will contact you soon with a solution."
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "Login",
+            "patterns": [
+                "How can I login?",
+                "login for schoology",
+                "login for clever",
+                "login page","what i can login for classroom"
+            ],
+            "responses": [
+                "<a href='https://xp.innerexplorer.org/compass/login'>Click to Login</a>"
+            ],
+            "context": [
+                ""
+            ]
+        },
+
+
+
+
+
+
+        {
+            "tag": "work",
+            "patterns": [
+                "what do you do generally?",
+                "do you do meditation too?",
+                "do you like meditation?"
+            ],
+            "responses": [
+                "Yes, I do meditate on my programming to understand you in a better way. Would you like to do it too?  Tap to play---('audio')"
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "goodbye",
+            "patterns": [
+                "Bye",
+                "See you later",
+                "Goodbye",
+                "Nice chatting to you, bye",
+                "Till next time"
+            ],
+            "responses": [
+                "Alright. You can find me here when you need me.",
+                "Have a nice day"
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "thanks",
+            "patterns": [
+                "Thanks",
+                "Thank you",
+                "That's helpful",
+                "Awesome, thanks",
+                "Thanks for helping me",
+                "thanku",
+                "Thankyou","Okay"
+            ],
+            "responses": [
+                "Happy to help!😊",
+                "Any time!",
+                "My pleasure.😊"
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "noanswer",
+            "patterns": [
+                " "
+            ],
+            "responses": [
+                "I’m trying to understand your query since it seems a bit beyond my abilities😕. I’ll need a bit of help from you. First, select one of the following option(s) that is closest to your query👇 <ol><li><a href='https://innerexplorer.org/aboutus.html'>What is Inner Explorer</a></li><li><a href='https://innerexplorer.org/ie_program.html'>Mindfulness Programs</a></li><li><a href='https://innerexplorer.org/experience.html'>Would you like take for a demo?</a></li><li><a href='https://www.youtube.com/watch?v=y_oxh40C6uk'>Enjoy the song 🎧 </a></li><li><a href='https://innerexplorer.org/homeapp/FAQ.html'>Frequently asked question</a></li><li><a href='https://innerexplorer.org/donate.html'>Donate now</a></li></ol>"
+                
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "support",
+            "patterns": [
+                "How you could help me?",
+                "What you can do?",
+                "What help you provide?",
+                "How you can be helpful?",
+                "What support is offered?",
+                "how can you help me?",
+                "Can you please help me?",
+                "I've few doubts, can you clear it out?",
+                "what can you do?",
+                "Help",
+                "Help me"
+            ],
+            "responses": [
+                "Genie is specifically designed to enable better interactions between customer and Inner Explorer and provide support for 24*7. Please choose any of the below👇 or Type your query. <ol><li><a href='https://innerexplorer.org/aboutus.html'>What is Inner Explorer</a></li><li><a href='https://innerexplorer.org/ie_program.html'>Mindfulness Programs</a></li><li><a href='https://innerexplorer.org/experience.html'>Would you like take for a demo?</a></li><li><a href='https://www.youtube.com/watch?v=y_oxh40C6uk'>Enjoy the song </a></li><li><a href='https://innerexplorer.org/homeapp/FAQ.html'>Frequently asked question</a></li><li><a href='https://innerexplorer.org/donate.html'>Donate now</a></li></ol>"
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "Mindfulness",
+            "patterns": [
+                "What actually the mindfulness is?",
+                "What is mindfulness",
+                "explain mindfulness",
+                "Brief mindfulness",
+                "Can you explain the term mindfulness in brief?"
+            ],
+            "responses": [
+                "Mindfulness is paying attention to the present moment with curiosity and kindness.\nIt is a daily practice that promotes mental health and flexibility."
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "Inner_explorer",
+            "patterns": [
+                "Brief of IE",
+                "What's the agenda of IE",
+                "what is Inner Explorer",
+                "What's the concept of Inner_Explorer"
+            ],
+            "responses": [
+                "Inner Explorer is the only audio-guided mindfulness program in education that is formulated on the world renowned Mindfulness-Based Stress Reduction (MBSR) protocol.\nInner Explorer is the world leader in the delivery of MBSR- based daily mindfulness practice in schools. For more info:- <a href='https://innerexplorer.org/aboutus.html'>About Us</a>"
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "Mindfulness_Programs",
+            "patterns": [
+                "How programs work?",
+                "How many mindfulness programs are there?",
+                " what's the structure of programs?",
+                "Show me your programs",
+                "Available programs",
+                "Programs",
+                "How many programs you offer?"
+            ],
+            "responses": [
+                "Our mindfulness Programs are basically categorized in 3 stages:- <ol><li>COMMUNITY-Best Suited for a Single School to bring a daily mindfulness program in every classroom.</li><li>DISTRICT-Best Suited for a large scale implementation across the School District for daily mindfulness practice.</li><li>CLOUD-Best Suited for a Single School to bring daily mindfulness programs to every classroom, and engage Parents / Caregivers.</li></ol>\nGet more detail:- <a href='https://innerexplorer.org/ie_program.html'>Our Programs</a>"
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "program_advice",
+            "patterns": [
+                "Which program does best suit me?",
+                "can you guide the best program for me?",
+                "I'm confused which program should I choose,help me?",
+                "best program",
+                "good plan for me",
+                "what's a suitable plan for me?"
+            ],
+            "responses": [
+                "No worries ,I am right here to guide you and to clarify your all possible doubts.\nPlease provide some details to suggest you the best program.<ol><li>Are you parents?</li><li>Are you leading a single school?</li><li>Are you running school district?</li></ol>"
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "parent",
+            "patterns": [
+                "Parent",
+                "1"
+            ],
+            "responses": [
+                "Use our IAmPresent app for daily mindfulness practices for your child.\nDuring this covid-19 crisis students can continue with daily practice by using mobile app at home. Hope you like my suggestion. Stay safe,stay healthy. Get more detail:- <a href='https://innerexplorer.org/homeapp/'>Click here</a> "
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "single_school",
+            "patterns": [
+                "I've single school",
+                "I'm running a single school",
+                "Single school",
+                "2"
+            ],
+            "responses": [
+                "Great! After analysis, I can see there are two options for you. <ol><li>COMMUNITY- Best Suited for a Single School to bring a daily mindfulness program in every classroom. And if you would like to engage parents/caregiver as well then CLOUD will be great for you I guess.</li><li>CLOUD- Best Suited for a Single School to bring a daily mindfulness program to every classroom, and engage Parents / Caregivers).</li></ol>Get more detail:- <a href='https://innerexplorer.org/ie_program.html'>Click here</a>"
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "school district",
+            "patterns": [
+                "school district",
+                "Running a district school",
+                "leading school at district level",
+                "3"
+            ],
+            "responses": [
+                "Nice! there is a perfect program for you,\nDISTRICT:- Best Suited for a large scale implementation across the School District for daily mindfulness practice.\nHope, you like it. Get more detail:- <a href='https://innerexplorer.org/ie_program.html'>Click here</a>"
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "Age_group",
+            "patterns": [
+                "which age-group can practice this mindfulness?","Is it only for school kids?"
+            ],
+            "responses": [
+                "Inner Explorer offers programs for all age-groups (PreK-12)"
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "Play_audio",
+            "patterns": [
+                "Can you play a song?","How you calm me","Not feeling well","Not much good","restless","feeling anxiety",
+                "Can you play something?","I'm feeling restless today.","I'm stressed", "Calm me",
+                "song"
+            ],
+            "responses": [
+                "Enjoy the music🎧, you would love it.🙂 Tap to play: <a href='https://www.youtube.com/watch?v=y_oxh40C6uk'>Song</a>"
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "demo",
+            "patterns": [
+                "I want to get demo",
+                "Can I get a demo", "Can I get a trial?","demo","trial",
+                "I want to experience it now","can I listen to some mindful audio?"
+            ],
+            "responses": [
+                "To Experience it now.<a href='https://innerexplorer.org/experience.html'>Click here</a>"
+            ],
+            "context": [
+                ""
+            ]
+        },
+
+
+
+        {
+            "tag": "audio_language",
+            "patterns": [
+                "In which languages mindfulness audios are available?",
+                "language of audio?",
+                "What language do you offer",
+                "how many languages do you offer","languages of mindfulness practices"
+            ],
+            "responses": [
+                "English & Spanish"
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "community_cost",
+            "patterns": [
+                "What's the average cost of community?",
+                "Cost of community program?",
+                "what is the cost of community program"
+            ],
+            "responses": [
+                "$1000 per year"
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "district_cost",
+            "patterns": [
+                "What's the average cost of district?",
+                "Cost of district program?",
+                "what is the cost of district program"
+            ],
+            "responses": [
+                "$1400 per year"
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "cloud_cost",
+            "patterns": [
+                "What's the average cost of cloud?",
+                "Cost of cloud program?",
+                "what is the cost of cloud program"
+            ],
+            "responses": [
+                "$2100 per year"
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "all_cost",
+            "patterns": [
+                "What's the average cost of each program?",
+                "Fee structure of programs",
+                "cost of programs",
+                "How much it costs?"
+            ],
+            "responses": [
+                "Cost of programs are as follows.<ol><li>COMMUNITY-$1000 per year</li><li>DISTRICT- $1400 per year</li><li>CLOUD- $2100 per year</li></ol>For more details click here:- <a href='https://innerexplorer.org/ie_program.html'>Our Programs</a>"
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "app_availability",
+            "patterns": [
+                "Who can use mobile app in community program",
+                " Can I use mobile app in any program?",
+                "Is mobile app available for   all users?",
+                "availability of mobile app"
+            ],
+            "responses": [
+                "In Community- Teachers and In Cloud and District- Parents & Teacher both "
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "Mobile_app",
+            "patterns": [
+                "How can students practice at home as well?",
+                "But How can children do practice in Lockdown?"
+            ],
+            "responses": [
+                "IE launched an app IAmPresent where students can do daily mindfulness practice at home in Lockdown.\nStay Safe Stay Calm"
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "Signup",
+            "patterns": [
+                "How to signup for programs?",
+                "How can I register in any program?",
+                "What to do for signup?",
+                "How to sign up?",
+                "How can I enroll into Inner explorer program?",
+                "How can I enroll into mindful practices?", "I want to signup for community. please help me to signup","please help me in enrollment"
+            ],
+            "responses": [
+                "<ol><li>For Explorer : <a href='https://xp.innerexplorer.org/compass/signupV7?p=18'>Click here</a>,</li><li>For Community Edition: <a href='https://xp.innerexplorer.org/compass/community-signup'>Click here</a> </li><li> For Cloud:-<a href='https://xp.innerexplorer.org/compass/signupV7?p=20'>Click here</a></li></ol>"
+                
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "Experiences",
+            "patterns": [
+                "Can you share some experiences of the people?",
+                "Please share some experiences",
+                "Can I get some reviews?"
+            ],
+            "responses": [
+                "Sure,<ol><li>1.Director of Special Ed and Student Support:-\n'We had just started IE a few months prior to the marathon bombing in Boston. Third grade was particularly traumatized as that was the grade that lost Martin. By continuing to participate in IE each day after the bombing, IE served as good trauma first-aid for several reasons: Maintaining familiar routines and rituals Ongoing teaching of calm down strategies. A safe space and sense of security. Helped teachers and students with self-care'. </li><li>Ileana Mellan, Principal, Mater Academy:- 'Inner Explorer is very user friendly and easy to implement. We have seen a dramatic increase in the positive behaviors of the students in the classrooms where the program is done with fidelity. The investment of 5-10 minutes daily, comes back to you exponentially! Programs such as this should be required in all schools!'"
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "steps",
+            "patterns": [
+                "How Can I start practicing?",
+                "How it works?",
+                "How can I start?"
+            ],
+            "responses": [
+                "Great! It's as easy as 1,2,3.<ol><li>Select the program that fits your needs.</li><li>Invite all the teachers to join your program.</li><li>Just press play to practice everyday.</li></ol>"
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "Impact",
+            "patterns": [
+                "Impact of mindfulness practices?",
+                " Achievements of practicing mindfulness",
+                "result",
+                "impacts",
+                "what's the effect of plans?",
+                "How much effective it is?",
+                "what is the effect of IE?",
+                "How will IE impact us?",
+                "how is IE useful",
+                "How much effective this can be?",
+                "What are effects of mindfullness?",
+                "How it effects mental health?",
+                "Does it have effect on mental health?",
+                "How does it impact mental health?",
+                "Does it have impact on mental health?"
+            ],
+            "responses": [
+                "The results showed that stress is reduced by 43% and disruptive behavior is reduced by 60%.\nIn addition, grade point averages (GPA's) are improved by 15% and grades in key subjects like reading, math and science are improved by over 20%.\nIn fact, the independent experts from BRAINFUTURES assessed evidence-based interventions that improve student's Brain Fitness' and academic outcomes. \nInner Explorer is selected  as one of the TOP 10 programs that improves students Executive Functioning, which is a stronger predictor of school success than any other factor including IQ!"
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "Need_mindfulness",
+            "patterns": [
+                "Why mindfulness?",
+                "What are the advantages of mindfulness?",
+                "How does mindfulness helps?",
+                "need of mindfulness",
+                "Why do we need mindfulness"
+            ],
+            "responses": [
+                "Mindfulness is paying attention to the present moment with curiosity and kindness.\nDaily mindfulness practices improve attention, behavior, creativity and resilience to bolster all learning. It reduces stress, boosts up the immune system. With mindfulness the brain’s ability to process and think is improved. Plus, increased awareness of thoughts and feelings further reduces reactivity and strengthens the relaxation response which reduces the heart rate and calms other body systems."
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "schools",
+            "patterns": [
+                "What's total number of schools till now?",
+                "No. of schools?",
+                "Which schools are associated with IE?",
+                "How many schools you have?",
+                "How many schools are associated with you?",
+                "Which schools are linked with IE?"
+            ],
+            "responses": [
+                "Schools-6644 & Students-866068"
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "Cloud_features",
+            "patterns": [
+                "what are the additional features in cloud program?",
+                "Advantage of cloud over community"
+            ],
+            "responses": [
+                "Parents/Caregiver of students can also get enganged for single schools"
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "no_access_student",
+            "patterns": [
+                "I'm student of this school, I am unable to login and do practice. can you resolve my isssue? "
+            ],
+            "responses": [
+                "yes! Ofcourse, Actually students can not login and start practising by themselves.\nYou can ask to your parents or teachers and can practice with them. "
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "appreciation",
+            "patterns": [
+                "You are amazing."
+            ],
+            "responses": [
+                "Thankyou.\nIt takes someone amazing to know something's amazing.\nYou are amazing too.😀"
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "bad",
+            "patterns": [
+                "You are stupid.",
+                "such a foolish answer",
+                "idiot genie"
+            ],
+            "responses": [
+                "opps😬, looks like I didn't hear you right.\nMind asking the question again?",
+                "I'm trying my best😞. Mind asking the question again?",
+                "Sometimes I make mistakes😞, but I can learn from them.\nCan you ask question again?"
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "smart",
+            "patterns": [
+                "You are smart",
+                "nice",
+                "great","brilliant","Intelligent","awesome"
+            ],
+            "responses": [
+                "Thanks, I'm blushing on the inside.🤭",
+                "Thank you! Glad you liked it.😇"
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "advicefor_child",
+            "patterns": [
+                "My child is 13 years old, he remains very distrubed/stressed, how can mindfulness help him?",
+                "My child is little but he is very aggressive, would mindfulness practice work for him?"
+            ],
+            "responses": [
+                "Yes! of course, Daily mindfulness practice teaches kids the practical techniques to appropriately handle difficult emotions such as stress, anxiety, anger etc and create a mental peace.\nInner Explorer offers programs for all age-groups (PreK-12)"
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "download_app",
+            "patterns": [
+                "How to download an app?",
+                "Where is IE app available?",
+                "Where can I find IE app?",
+                "how can I download the app?",
+                "From where can I download IE app?",
+                "Can you tell me from where can I get IE app?",
+                "Which IE app is available on Playstore?"
+            ],
+            "responses": [
+                "<ol><li>For Android : <a href='https://play.google.com/store/apps/details?id=org.innerExplorer.mobileapp&hl=en '>Download</a>,</li><li>For IOS: <a href='https://apps.apple.com/app/id1467143161'>Download</a> </li><li> Register through web:-<a href='https://xp.innerexplorer.org/compass/family_onboarding'>Click</a></li></ol>"
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "practice-detail",
+            "patterns": [
+                "How many practices are there ?",
+                "what are program types?",
+                "Different types of program?"
+            ],
+            "responses": [
+                "Each of the four age/stage appropriate programs include:· \n90 audio-guided reflective practices, that are 5-10 minutes each and go in sequence. \n30 transition practices that are 1-3 minutes each for days when you need a shorter practice. \nSound practices that are 1-2 minutes."
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "chatbot",
+            "patterns": [
+                "who are  you?",
+                "your identity"
+            ],
+            "responses": [
+                "I am Genie, IE's virtual assistant specifically designed to solve the queries of our  users so as to reduce their efforts over small issues."
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "practice-detail",
+            "patterns": [
+                "How many practices are there ?"
+            ],
+            "responses": [
+                "Each of the four age/stage appropriate programs include:· \n90 audio-guided reflective practices, that are 5-10 minutes each and go in sequence. \n30 transition practices that are 1-3 minutes each for days when you need a shorter practice. \nSound practices that are 1-2 minutes."
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "reviews-experiences",
+            "patterns": [
+                "Can I've a look on reviews?",
+                "I want to see reviews",
+                "I want to see experiences",
+                "Iwant to know experiences",
+                "How about reviews?",
+                "what about reviews?",
+                "Reviews?",
+                "Anything on reviews?",
+                "where can i see reviews?"
+            ],
+            "responses": [
+                ""
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "Discounts",
+            "patterns": [
+                "How many can practice from one subscription?",
+                "From one subscription how many can practice?",
+                "Any discounts?",
+                "Discounts available?",
+                "are discounts available?",
+                "any discounts on group purchase",
+                "group discounts?"
+            ],
+            "responses": [
+                "For now there is no discount available. For further updates, kindly provide your Email and stay connected.Thanku "
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "Parent's-concern",
+            "patterns": [
+                "How is this helpful for my child?",
+                "How is this helpful for my kid?",
+                "How this helps my kid in academics?",
+                "Is it helpful for my kid at school?",
+                "Does it help kids at schools?",
+                "Is it helping kids at school?",
+                "How it helps my kids at school?"
+            ],
+            "responses": [
+                "Students learn to regulate their attention,emotions and behaviors,they perform better in school,experience fewer discipline problems,and develop resilience to counteract the negative effects of stress and anxiety."
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "Teacher's-concern",
+            "patterns": [
+                "How is this helpful for a teacher?",
+                "is this helpful for teacher?",
+                "Does it works on teachers as well?",
+                "Is it helping teachers?",
+                "Does it help teachers at schools?",
+                "Does it help teacher anyway?"
+            ],
+            "responses": [
+                "When teachers practice with their students, report a 43% decrease in their stress levels that helps them reconnect with their love of teaching."
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "invites",
+            "patterns": [
+                "How many invites possible?",
+                "we can invite how many?",
+                "can we invite?",
+                "Is invite possible?",
+                "are invites possible?",
+                "can we invite people?"
+            ],
+            "responses": [
+                "It's based on plan, Community-700, Explorer-100"
+            ],
+            "context": [
+                ""
+            ]
+        }
+        
+    ]
+}
